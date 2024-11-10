@@ -7,6 +7,6 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 
-app.listen(5000, () => {
-  console.log("app started on post 5000");
+app.listen(process.env.PORT, () => {
+  console.log(`app started on post ${process.env.PORT}`);
 });
